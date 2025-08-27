@@ -11,6 +11,7 @@ interface ListItemData {
   title: string;
   subtitle: string;
   timeline: string;
+  area: string;
   imageSrc?: string;
   children?: ListItemData[]; // Allow nested items
 }

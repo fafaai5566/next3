@@ -35,19 +35,19 @@ const hoverContentMapDo: Record<string, React.ReactNode> = {
   'UX/UI': (
     <div className="flex items-center gap-4">
       <img src="/images/uxui.png" alt="UX/UI" className="w-40 h-40 rounded object-cover" />
-      <span>I design intuitive user experiences with attention to detail.</span>
+      <span>With years of experience designing enterprise web applications in complex domains, I lead the end-to-end UX process—from research to delivery—crafting intuitive, pixel-perfect user experiences.</span>
     </div>
   ),
   'User centred design': (
     <div className="flex items-center gap-4">
       <img src="/images/user-centred.png" alt="User centred design" className="w-40 h-40 rounded object-cover" />
-      <span>Always focusing on real users' needs in every design decision.</span>
+      <span>I am passionate about introducing a user-centered approach to the team, and it's rewarding to see them embrace its value.</span>
     </div>
   ),
   'Industrial design': (
     <div className="flex items-center gap-4">
       <img src="/images/industrial design.png" alt="Industrial design" className="w-40 h-40 rounded object-cover" />
-      <span>Blending aesthetics and usability in physical product design.</span>
+      <span>With years of experience designing consumer electronics and medical devices, I guide the end-to-end design process from user research and ideation to prototyping and mass production.</span>
     </div>
   ),
 };
@@ -103,19 +103,36 @@ const hoverContentMap: Record<string, React.ReactNode> = {
   {
     title: 'Product Designer',
     subtitle: 'Hexaware • Full time',
-    timeline: '2022 – present',
+    timeline: 'May 2022 – present',
+    area: 'Amsterdam',
     imageSrc: '/images/company/hexaware_technologies_logo.jpeg',
     children: [
       {
-        title: 'System Design',
-        subtitle: 'Weeview',
-        timeline: '2023',
+        title: 'UX Designer',
+        subtitle: 'London Stock Exchange Group (LSEG) • Contract',
+        timeline: 'Sep 2022 - Jun 2024',
+        area: 'Amsterdam',
+        imageSrc: '/images/company/london_stock_exchange_group_logo.jpeg',
+      },
+      {
+        title: 'UX/UI Designer',
+        subtitle: 'Rakoo • Full time',
+        timeline: 'Jan 2021 - Apr 2022',
+        area: 'Nijmegen',
+        imageSrc: '/images/company/rakoo_logo.jpeg',
+      },
+      {
+        title: 'Product Designer',
+        subtitle: 'Weeview • Full time',
+        timeline: 'Jul 2016 - Dec 2019',
+        area: 'Remote',
         imageSrc: '/images/company/Weeview.png',
       },
       {
-        title: 'Research Lab',
+        title: 'Industrial Designer',
         subtitle: 'Wistron',
-        timeline: '2022',
+        timeline: 'Sep 2009 - Jun 2016',
+        area: 'Taipei',
         imageSrc: '/images/company/wistron_logo.jpeg',
       },
     ],

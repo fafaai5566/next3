@@ -8,6 +8,7 @@ interface ListItemProps {
   title: string;
   subtitle: string;
   timeline: string;
+  area: string;
   imageSrc?: string;
   showIcon?: boolean;
   isClickable?: boolean;
@@ -19,6 +20,7 @@ const ListItem: React.FC<ListItemProps> = ({
   title,
   subtitle,
   timeline,
+  area,
   imageSrc,
   showIcon = false,
   isClickable = false,
@@ -52,6 +54,7 @@ const ListItem: React.FC<ListItemProps> = ({
             <div className="text-body-2-strong text-neutralFg-selected">{title}</div>
             <div className="text-body-1-strong text-neutralFg">{subtitle}</div>
             <div className="text-body-1 text-neutralFg">{timeline}</div>
+            <div className="text-body-1 text-neutralFg">{area}</div>
           </div>
         </div>
 
