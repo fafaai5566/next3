@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Scoped only inside project content */
+  .project-content h2 {
+    @apply mt-16 mb-10 text-title-2;
+  }
+
+  .project-content h3 {
+    @apply mt-12 mb-2 text-subtitle-1 text-neutralFg;
+  }
+
+  .project-content p {
+    @apply mb-4 text-body-2 leading-7;
+  }
+
+  .project-content hr {
+    @apply border-neutralStroke my-6;
+  }
+}
