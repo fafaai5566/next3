@@ -46,7 +46,7 @@ const hoverContentMapDo: Record<string, React.ReactNode> = {
   ),
   'Industrial design': (
     <div className="flex items-center gap-4">
-      <img src="/images/industrial-design.png" alt="Industrial design" className="w-40 h-40 rounded object-cover" />
+      <img src="/images/hiking.png" alt="Industrial design" className="w-40 h-40 rounded object-cover" />
       <span>With years of experience designing consumer electronics and medical devices, I guide the end-to-end design process from user research and ideation to prototyping and mass production.</span>
     </div>
   ),
