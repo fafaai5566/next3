@@ -5,7 +5,7 @@ export const projectsA: ProjectData[] = [
     id: 'project-1',
     title: 'Entity Master',
     thumbnail: '/images/projects/entitymaster/entitymaster.svg',
-    bgColor: '#788c5d',
+    bgColor: '#99AB82',
     description: 'Transforming entity management into a more efficient and user-friendly data experience',
     timeline: 'Dec 2023 - Jul 2024',
     subtitle: 'London Stock Exchange Group (LSEG)',
@@ -70,8 +70,8 @@ export const projectsA: ProjectData[] = [
     subtitle: 'London Stock Exchange Group (LSEG)',
     description: 'Building a Transcript Platform that Drives Efficiency and Collaboration',
     timeline: 'Sep 2022 - Dec 2023',
-    thumbnail: '/images/projects/entitymaster/entitymaster.svg',
-    bgColor: '#A39F8D',
+    thumbnail: '/images/projects/hive/hive.svg',
+    bgColor: '#A6C2B8',
     content: (
       <>
         <p className="text-subtitle-1 mb-6 text-neutralFg">Building a Transcript Platform that Drives Efficiency and Collaboration</p>
@@ -116,25 +116,83 @@ This shift not only improved the product but also embedded <strong>UX thinking i
         
         
       </>
-    ),
+      ),
   },
   {
     id: 'project-3',
-    title: 'Decentralised Energy System',
-    subtitle: 'Hexaware Technologies',
-    description: 'A smart grid system to optimize energy usage.',
-    timeline: 'Jan 2023 - Dec 2023',
-    thumbnail: '/images/company/hexaware_technologies_logo.jpeg',
-    bgColor: '#f0f4f8',
+    title: 'RTC Workshop Management',
+    subtitle: 'CitNOW Group',
+    description: 'Transforming a legacy workshop management platform',
+    timeline: 'Mar 2025 - Jun 2025',
+    thumbnail: '/images/projects/rtc/rtc.svg',
+    bgColor: '#D97757',
     content: (
       <>
-        <video src="/videos/smarthome.mp4" controls className="w-full rounded-lg mb-4" />
-        <p className="mb-4">This project aimed to reduce energy waste in homes...</p>
-        <div className="grid grid-cols-3 gap-4">
-          <img src="/images/smarthome1.jpg" className="rounded-lg" />
-          <img src="/images/smarthome2.jpg" className="rounded-lg" />
-          <img src="/images/smarthome3.jpg" className="rounded-lg" />
-        </div>
+        <p className="text-subtitle-1 mb-6 text-neutralFg">Transforming a legacy workshop management platform</p>
+        
+        <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16">
+  <img
+    src="/images/projects/rtc/rtc.png"
+    alt="RTC Workshop Management application"
+    className="w-full shadow-lg rounded-md"
+  />
+</div>
+        <p>
+      We were asked to evaluate the cost of migrating a 20-year-old legacy workshop management platform to the cloud. The client’s perspective was straightforward: replicate all existing features in a cloud environment, with a new visual layer added on top. The redesign of the interface was seen merely as an “add-on,” rather than a core part of the project.
+        </p>
+       
+        
+        <h2>The Challenge</h2>
+        
+        <p>
+      However, the reality is more complex. While functionally comprehensive, the platform suffers from outdated design patterns and a Windows 95-style UI. The sales team has repeatedly faced resistance from prospective clients, who often compare it unfavorably with modern, more user-friendly competitors.
+        </p>
+        <h2>The Design Opportunity</h2>
+        <p>
+      Instead of a migration that would replicate existing issues, I saw this as an opportunity to solve the underlying problems. By uncovering user pain points, simplifying workflows, and designing a more intuitive experience, we can deliver a solution far beyond a simple reskin.
+      </p>
+      <h2>Our Process</h2>
+        <h3>1. Broadening the scope</h3>
+        <p>
+      We persuaded the client to include user research as part of the assessment. In return, we committed to delivering both a research report and design audit report—not just technical estimates.
+        </p>
+        <h3>2. Understanding the landscape</h3>
+        <p>
+      Direct access to end users (garage staff) wasn’t possible. Instead, we interviewed subject-matter experts (SMEs) from the CitNow group. This gave us a comprehensive view of:
+      <ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>How the service ecosystem works.</li>
+  <li>Pain points within the current workflows.</li>
+  <li>Where the platform disconnected and created friction for different types of users.</li>
+</ul>
+        </p>
+        <h3>3. Identifying UX issues</h3>
+        <p>From these discussions and the design audit, we uncovered:
+        <ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>- The current design forces users to navigate between multiple pages to find critical information, which increases cognitive load and introduces the risk of missing important details.</li>
+  <li>Redundant features that added complexity without value.</li>
+  <li>The user experience is hindered by a lack of consistency and poor UX practices.</li>
+</ul>
+</p>  
+        <h3>4. Moving from issues to solutions</h3>
+        <p>Rather than stopping at critique, we provided concrete design suggestions for how the platform could evolve—beyond just aesthetics—toward more efficient and user-centered workflows.</p>
+        <h3>5. Client validation</h3>
+        <p>When we presented the prototype—paired with research insights and our design rationale—the clients immediately saw the potential. The shift from “reskinning legacy platform” to “reimagining the service experience” became clear.</p>
+
+        <h2>Results</h2>
+        <p>
+
+<ul className="list-disc pl-6 space-y-2">
+  <li>The client bought into our vision and awarded us the project.</li>
+  <li>
+    Instead of merely rebuilding the platform in the cloud, the initiative is now positioned as a <strong>strategic redesign</strong> that:
+    <ul className="list-[circle] pl-6 space-y-1 mt-2">
+      <li>Eliminates redundancy.</li>
+      <li>Improves usability.</li>
+      <li>Creates a modern digital co-working space ready to compete in the market.</li>
+    </ul>
+  </li>
+</ul>
+        </p>
       </>
     ),
   },

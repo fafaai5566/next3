@@ -51,7 +51,7 @@ export default function Home() {
         <main className="flex flex-col space-y-4 sm:space-y-6 row-start-3 items-center sm:items-start w-full max-w-xl">
           <Card
             title="Enterprise Platform"
-            description="Management tool for company data and resources."
+            description="Designing enterprise tools that simplify complex workflow, foster collaboration, and modernize outdated systems."
             imageSrc="/images/enterprise-management.png"
             videoSrc="/videos/laptop-open_360p.mp4"
             videoScale={1.2}
@@ -59,6 +59,22 @@ export default function Home() {
             targetPath="/details/id01"
             onClick={() =>
               handleCardClick('/videos/laptop-open_360p.mp4', '/details/id01')
+            }
+          />
+
+                    <Card
+            title="Digital Workspace"
+            description="Modern employee digital experience platform."
+            imageSrc="/images/employee-digital-workspace.png"
+            videoSrc="/videos/employee-digital-workspace_360p.mp4"
+            videoScale={1.8}
+            videoOffsetY={0}
+            targetPath="/details/id04"
+            onClick={() =>
+              handleCardClick(
+                '/videos/employee-digital-workspace_360p.mp4',
+                '/details/id04'
+              )
             }
           />
 
@@ -88,21 +104,7 @@ export default function Home() {
             }
           />
 
-          <Card
-            title="Digital Workspace"
-            description="Modern employee digital experience platform."
-            imageSrc="/images/employee-digital-workspace.png"
-            videoSrc="/videos/employee-digital-workspace_360p.mp4"
-            videoScale={1.8}
-            videoOffsetY={0}
-            targetPath="/details/id04"
-            onClick={() =>
-              handleCardClick(
-                '/videos/employee-digital-workspace_360p.mp4',
-                '/details/id04'
-              )
-            }
-          />
+
         </main>
       )}
       </div>

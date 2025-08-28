@@ -3,12 +3,12 @@ import { ProjectData } from '@/types/ProjectData';
 export const projectsB: ProjectData[] = [
   {
     id: 'project-1',
-    title: 'Urban Mobility Study',
+    title: 'Enterpise Banking Platform',
     thumbnail: '/images/projects/entitymaster/entitymaster.svg',
     bgColor: '#788c5d',
     description: 'A comprehensive study on urban transport challenges.',
     timeline: 'Jan 2023 - Dec 2023',
-    subtitle: 'Hexaware Technologies',
+    subtitle: 'Bank Albilad',
     content: (
       <>
         <p className="mb-4">This project explores urban transport challenges...</p>
@@ -44,32 +44,12 @@ export const projectsB: ProjectData[] = [
   },
   {
     id: 'project-2',
-    title: 'Smart Home Energy System',
+    title: 'Mango wallet',
     subtitle: 'Hexaware Technologies',
     description: 'A smart home system to optimize energy usage.',
     timeline: 'Jan 2023 - Dec 2023',
     thumbnail: '/images/projects/entitymaster/entitymaster.svg',
     bgColor: '#A39F8D',
-    content: (
-      <>
-        <video src="/videos/smarthome.mp4" controls className="w-full rounded-lg mb-4" />
-        <p className="mb-4">This project aimed to reduce energy waste in homes...</p>
-        <div className="grid grid-cols-3 gap-4">
-          <img src="/images/smarthome1.jpg" className="rounded-lg" />
-          <img src="/images/smarthome2.jpg" className="rounded-lg" />
-          <img src="/images/smarthome3.jpg" className="rounded-lg" />
-        </div>
-      </>
-    ),
-  },
-  {
-    id: 'project-3',
-    title: 'Decentralised Energy System',
-    subtitle: 'Hexaware Technologies',
-    description: 'A smart grid system to optimize energy usage.',
-    timeline: 'Jan 2023 - Dec 2023',
-    thumbnail: '/images/company/hexaware_technologies_logo.jpeg',
-    bgColor: '#f0f4f8',
     content: (
       <>
         <video src="/videos/smarthome.mp4" controls className="w-full rounded-lg mb-4" />
