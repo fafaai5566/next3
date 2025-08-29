@@ -168,7 +168,7 @@ This shift not only improved the product but also embedded <strong>UX thinking i
         <h3>3. Identifying UX issues</h3>
         <p>From these discussions and the design audit, we uncovered:
         <ul className="list-disc pl-6 space-y-2 mt-3">
-  <li>- The current design forces users to navigate between multiple pages to find critical information, which increases cognitive load and introduces the risk of missing important details.</li>
+  <li>The current design forces users to navigate between multiple pages to find critical information, which increases cognitive load and introduces the risk of missing important details.</li>
   <li>Redundant features that added complexity without value.</li>
   <li>The user experience is hindered by a lack of consistency and poor UX practices.</li>
 </ul>

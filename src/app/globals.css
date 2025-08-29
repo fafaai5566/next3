@@ -13,7 +13,7 @@
   }
 
   .project-content p {
-    @apply mb-4 text-body-2 leading-7;
+    @apply mb-4 text-body-3 leading-7;
   }
 
   .project-content hr {

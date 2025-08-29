@@ -63,44 +63,44 @@ export default function Home() {
           />
 
                     <Card
-            title="Digital Workspace"
-            description="Modern employee digital experience platform."
+            title="Employee Digital Workspace"
+            description="Designing a seamless and unified digital workspace for employees"
             imageSrc="/images/employee-digital-workspace.png"
             videoSrc="/videos/employee-digital-workspace_360p.mp4"
             videoScale={1.8}
             videoOffsetY={0}
-            targetPath="/details/id04"
+            targetPath="/details/id02"
             onClick={() =>
               handleCardClick(
                 '/videos/employee-digital-workspace_360p.mp4',
-                '/details/id04'
+                '/details/id02'
               )
             }
           />
 
           <Card
             title="Fintech Experience"
-            description="Digital banking experience platform."
+            description="Creating Intuitive Digital Banking Experiences"
             imageSrc="/images/fintech.png"
             videoSrc="/videos/fintech_360p.mp4"
             videoScale={1.2}
             videoOffsetY={0}
-            targetPath="/details/id02"
+            targetPath="/details/id03"
             onClick={() =>
-              handleCardClick('/videos/fintech_360p.mp4', '/details/id02')
+              handleCardClick('/videos/fintech_360p.mp4', '/details/id03')
             }
           />
 
           <Card
             title="Learning System"
-            description="Interactive learning platform with video content."
+            description="Transform a learning platform into a digital learning experience."
             imageSrc="/images/e-learning.png"
             videoSrc="/videos/e-learning_360p.mp4"
             videoScale={1.1}
             videoOffsetY={10}
-            targetPath="/details/id03"
+            targetPath="/details/id04"
             onClick={() =>
-              handleCardClick('/videos/e-learning_360p.mp4', '/details/id03')
+              handleCardClick('/videos/e-learning_360p.mp4', '/details/id04')
             }
           />
 

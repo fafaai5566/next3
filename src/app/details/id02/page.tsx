@@ -42,7 +42,7 @@ useEffect(() => {
     <div className="min-h-screen flex flex-col p-8 sm:p-10 space-y-6 justify-center max-w-7xl mx-auto">
 
       <div>
-      <HeaderBar title="Enterprise Platform" onBack={() => router.back()} />
+      <HeaderBar title="Employee Digital Workspace" onBack={() => router.back()} />
         </div>
 <div className="flex-1 overflow-hidden">
 <ProjectLayout
@@ -60,4 +60,3 @@ useEffect(() => {
     </div>
   );
 }
-

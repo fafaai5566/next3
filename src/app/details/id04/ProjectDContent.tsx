@@ -1,7 +1,7 @@
 
 import { useEffect } from "react";
 
-export default function ProjectBContent({ project }) {
+export default function ProjectDContent({ project }) {
 
     useEffect(() => {
     // Scroll the details container back to the top

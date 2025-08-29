@@ -34,13 +34,13 @@ const iconMap: Record<string, React.ReactNode> = {
 const hoverContentMapDo: Record<string, React.ReactNode> = {
   'UX/UI': (
     <div className="flex items-center gap-4">
-      <img src="/images/uxui.png" alt="UX/UI" className="w-40 h-40 rounded object-cover" />
+      {/* <img src="/images/uxui.png" alt="UX/UI" className="w-40 h-40 rounded object-cover" /> */}
       <span>With years of experience designing enterprise web applications in complex domains, I lead the end-to-end UX process—from research to delivery—crafting intuitive, pixel-perfect user experiences.</span>
     </div>
   ),
   'User centred design': (
     <div className="flex items-center gap-4">
-      <img src="/images/user-centred.png" alt="User centred design" className="w-40 h-40 rounded object-cover" />
+      {/* <img src="/images/user-centred.png" alt="User centred design" className="w-40 h-40 rounded object-cover" /> */}
       <span>I am passionate about introducing a user-centered approach to the team, and it's rewarding to see them embrace its value.</span>
     </div>
   ),
