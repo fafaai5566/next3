@@ -1,6 +1,7 @@
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import ClientLayout from './ClientLayout'; // Fixed typo in import
+import { Analytics } from '@vercel/analytics/react'; // ✅ add this
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en" className={roboto.variable}>
       <body className="font-sans">
         <ClientLayout>{children}</ClientLayout>
+        <Analytics /> {/* ✅ add here */}
       </body>
     </html>
   );
