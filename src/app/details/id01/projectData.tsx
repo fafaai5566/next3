@@ -138,6 +138,7 @@ export const projectsA: ProjectData[] = [
 Before jumping into features, I wanted to make sure we had the <strong>full picture of user needs</strong>—including the frustrations and hidden challenges that weren’t captured in the initial requirements.
         </p>
         <h3>Advocating for a User-Centered Approach</h3>
+
         <p>
       Although requirements were provided upfront, they were feature-driven and lacked real user context. When I proposed interviewing end users, the development team initially pushed back: <em>“We know the product well, just ask us”</em>.
 
@@ -145,6 +146,13 @@ I recognized this as an opportunity to introduce a <strong>user-centered design 
 
 By actively involving stakeholders throughout the design process, I built trust and support—helping the project move forward smoothly.
         </p>
+                <div>
+          <img
+    src="/images/projects/hive/serviceBluePrint.png"
+    alt="Service blueprint"
+    className="w-full rounded-md"
+  />
+</div>
         <h3>Leveraging Design Critique</h3>
         <p>
       I also engaged with other design teams working on related digital content projects. Through design critiques, we exchanged feedback, identified blind spots, and ensured consistent design patterns across LSEG’s ecosystem—resulting in a more cohesive user experience.

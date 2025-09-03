@@ -35,6 +35,13 @@ To address this, the team introduced a digital governance service on ServiceNow.
         <h2>My Approach</h2>
         <h3>1. Advocating for User Research</h3>
         <p>The governance and ServiceNow teams were technically skilled but lacked direct user insights. I strongly proposed and led user research to uncover pain points and user needs.
+                                  <div className="bg-neutralBg-level3 px-0 py-0 rounded-md mt-10 mb-10">
+  <img
+    src="/images/projects/ats/userJourney.png"
+    alt="User journey map"
+    className="w-full rounded-md"
+  />
+</div>
           <ul className="list-disc pl-6 space-y-2 mt-3">
   <li><strong>Interviews</strong>: I spoke with diverse stakeholders—solution architects, reviewers, approvers, and project teams.</li>
   <li><strong>Findings</strong>: While each user group had unique needs, several pain points were common across all roles. The redesigned service needed to address these shared challenges while still supporting different perspectives.
