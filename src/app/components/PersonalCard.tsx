@@ -96,7 +96,7 @@ const hoverContentMap: Record<string, React.ReactNode> = {
 };
 
 
-  const tagsDo = ['UX/UI', 'User centred design', 'Industrial design'];
+  const tagsDo = ['UX/UI', 'User centred design', 'User research', 'Visual design', 'Design systems', 'Wireframing & prototyping', 'Vibe coding', 'Figma',  'Industrial design', 'C4D', 'Pro Engineer'];
   const tagsLike = ['Hiking', 'Biking', 'Drawing', 'Coffee'];
 
   const experience = [
@@ -161,8 +161,8 @@ const hoverContentMap: Record<string, React.ReactNode> = {
 
       {/* I do */}
       <div>
-        <p className="text-body-2-strong text-neutralFg mb-2">I do</p>
-        <div className="flex flex-wrap gap-2">
+        <p className="text-body-2-strong text-neutralFg mb-2">My skills</p>
+        <div className="flex flex-wrap gap-x-2 gap-y-3">
           {tagsDo.map((tag) => (
             <InteractionTag key={tag} label={tag} variant="outline" hoverContent={hoverContentMapDo[tag]} />
           ))}
@@ -171,8 +171,8 @@ const hoverContentMap: Record<string, React.ReactNode> = {
 
       {/* I like */}
       <div>
-        <p className="text-body-2-strong text-neutralFg mt-4 mb-2">I like</p>
-        <div className="flex flex-wrap gap-2">
+        <p className="text-body-2-strong text-neutralFg mt-4 mb-2">My favorite ways to recharge</p>
+        <div className="flex flex-wrap gap-x-2 gap-y-3">
           {tagsLike.map((tag) => (
             <InteractionTag key={tag} label={tag} variant="outline" icon={iconMap[tag]} hoverContent={hoverContentMap[tag]} />
           ))}

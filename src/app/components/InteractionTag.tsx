@@ -117,7 +117,7 @@ const InteractionTag: React.FC<InteractionTagProps> = ({
 
   // 🖥️ Use Tooltip on Desktop
   return (
-    <Tooltip.Provider>
+    <Tooltip.Provider delayDuration={80} skipDelayDuration={200}>
       <Tooltip.Root>
         <Tooltip.Trigger asChild>
           <span>{TagContent}</span>

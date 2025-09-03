@@ -12,53 +12,95 @@ export const projectsA: ProjectData[] = [
     content: (
       <>
         <p className="text-subtitle-1 mb-6 text-neutralFg">Transforming entity management into a more efficient and user-friendly data experience.</p>
-        <hr className="border-neutralStroke mb-12" />
+        {/* <hr className="border-neutralStroke mb-12" /> */}
+          <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16">
+  <img
+    src="/images/projects/entitymaster/jtbd.png"
+    alt="Jobs to be Done workshop"
+    className="w-full shadow-lg rounded-md"
+  />
+</div>
         <p>
-      As part of a strategic partnership with Microsoft, 
-      I led the design direction and guided a junior designer in creating a modern platform for managing entity data. 
-      The project replaced a Windows 95–style legacy tool and served as a pilot for establishing reusable design patterns, 
-      setting the foundation for future data tools across the LSEG ecosystem.
+      As part of a <strong>strategic partnership with Microsoft</strong>, I led the <strong>design direction</strong> and guided a junior designer in creating a modern platform for managing entity data.
         </p>
+        
+        <p>Key results:</p>
+        <p>
+        <ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>Replaced a <strong>Windows 95–style legacy tool</strong></li>
+  <li>Served as a <strong>pilot for reusable design patterns</strong></li>
+  <li>Set the foundation for <strong>future data tools across the LSEG ecosystem</strong></li>
+</ul></p>
+        
         <h2>Challenges</h2>
         <h3>1. Misaligned collaboration</h3>
         <p>
-      The content team documented requirements based on past practices,
-      essentially replicating the old system with minor visual updates. They
-      also created wireframes directly in Excel, expecting designers to simply
-      “paint over” them, and often complained about how time-consuming it was
-      to manage changes in Excel.
-        </p>
+        <ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>Content team documented requirements based on <strong>past practices,</strong> essentially replicating the old system with minor visual updates.</li>
+    <li>They also created wireframes directly in <strong>Excel,</strong> expecting designers to simply <em>“paint over”</em> them, and often complained about how time-consuming it was to manage changes in Excel.</li>
+</ul></p>
         <h3>2. Gaps between requirements and user needs</h3>
         <p>
-      The documented requirements did not fully capture user needs and pain points, creating a gap between what was requested, what users actually needed, and the good user experience we aimed to deliver. Development teams assessed their work based on these incomplete requirements, so when designers proposed improvements, it often disrupted delivery schedules.
+      <ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>Documented requirements <strong>missed real user needs and pain points</strong></li>
+  <li>Development teams assessed their work based on <strong>incomplete requirements</strong></li>
+  <li>Designer-proposed improvements often <strong>disrupted delivery schedules</strong></li>
+</ul>
         </p>
         <h3>3. Lack of cross-team alignment</h3>
         <p>
-      Another design team was working on separate features of the platform. Without alignment, there was a risk of fragmented experiences and resistance to change. As this was part of a larger redesign effort, other teams working on related tools often operated in silos, making it difficult to synchronize efforts and ensure consistent design patterns across the ecosystem.
+      <ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>Another design team worked on <strong>separate features without coordination</strong></li>
+  <li>Risk of <strong>fragmented experiences</strong> and <strong>resistance to change</strong></li>
+  <li>Other teams operated in <strong>silos,</strong> making it difficult to ensure <strong>consistent design patterns</strong></li>
+</ul>
         </p>
         <h2>How I overcame it</h2>
         <p>
-      To address these challenges, I focused on improving collaboration, grounding decisions in user insights, and establishing efficient design practices.
+      To address these challenges, I focused on <strong>improving collaboration,</strong> <strong>grounding decisions in user insights,</strong> and <strong>establishing efficient design practices.</strong>
         </p>
         <h3>1. Iterating the way of working</h3>
         <p>
-      Initially, the team worked in sprints to complete assigned features, sharing only high-fidelity prototypes with stakeholders. However, given the tight schedule and the number of design changes we wanted to propose, I shifted the approach to daily reviews. We adopted a draft-first process that enabled quick iterations. While this added some pressure on designers, it aligned the team, kept everyone on the same page, provided clear direction at each step, and built momentum.
+      <ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>I reviewed how to move things forward efficiently, balancing the number of changes we wanted to make with the tight schedule, and shifted from sprint-based delivery to <strong>daily reviews.</strong></li>
+  <li>Adopted a <strong>draft-first process</strong> that enabled rapid iterations</li>
+  <li>Outcome: <strong>aligned</strong> the team, provided <strong>clear direction,</strong> and built <strong>momentum</strong></li>
+</ul>
         </p>
         <h3>2. Building a deeper understanding of users</h3>
         <p>
-      We conducted user interviews and usability testing sessions, measuring task completion, errors, and satisfaction. These insights uncovered real user needs and directly informed our design decisions.
+      <ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>Conducted <strong>user interviews</strong> and <strong>usability testing</strong></li>
+  <li>Measured <strong>task completion, errors, and satisfaction</strong></li>
+  <li>Insights directly <strong>informed design decisions</strong></li>
+</ul>
         </p>
         <h3>3. Bridging stakeholders and designers</h3>
         <p>
-      Through workshops, I facilitated alignment between stakeholders and the design team. Using the Jobs to Be Done method, we mapped how to build and deliver capabilities, which I then translated into service blueprints and draft wireframes.
+<ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>Facilitated <strong>workshops</strong> for alignment</li>
+  <li>Applied <strong>Jobs to Be Done</strong> method to map how to build and deliver capabilities</li>
+  <li>Created <strong>service blueprints</strong> and <strong>draft wireframes</strong></li>
+</ul>
         </p>
         <h3>4. Rapid design iteration</h3>
+                <div className="bg-neutralBg-level3 px-0 py-0 rounded-md mt-10 mb-10">
+  <img
+    src="/images/projects/entitymaster/sketch.png"
+    alt="sketches prototype"
+    className="w-full rounded-md"
+  />
+</div>
         <p>
-      Sketches were reviewed early with the PO and design lead, then quickly converted into high-fidelity prototypes. These were presented to stakeholders, iterated on based on feedback, and refined in cycles.
+      <ul className="list-disc pl-6 space-y-2 mt-3">
+  <li>Started with <strong>sketches,</strong> reviewed with PO and design lead</li>
+  <li>Converted into <strong>high-fidelity prototypes</strong></li>
+  <li>Presented → iterated → refined in <strong>fast cycles</strong></li>
+</ul>
         </p>
         <h2>Results</h2>
         <p>
-      The most rewarding part of this project was helping to raise the UX maturity of the team. At first, change felt almost impossible—but gradually, mindsets shifted. I remember my design lead being impressed when a key stakeholder from the content team asked for my input on an upcoming feature. That moment confirmed that the value of a user-centered approach was being recognized. It showed that stakeholders trusted the role of UX design in shaping user needs into meaningful, well-crafted experiences.
+      The most rewarding part of this project was helping to raise the <strong>UX maturity</strong> of the team. At first, change felt almost impossible—but gradually, mindsets shifted. I remember my design lead being impressed when a key stakeholder from the content team asked <em>“Could you provide us with your solution for the upcoming features?”</em>  That moment confirmed that the value of a user-centered approach was being recognized. It showed that stakeholders <strong>trusted the role of UX design</strong> in shaping user needs into meaningful, well-crafted experiences.
         </p>
         
       </>
