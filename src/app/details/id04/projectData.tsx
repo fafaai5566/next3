@@ -4,7 +4,7 @@ export const projectsD: ProjectData[] = [
   {
     id: 'project-1',
     title: 'Rakoo learning platform',
-    thumbnail: '/images/projects/rakoo/rakoo.svg',
+    thumbnail: '/images/projects/rakoo/rakooLogo.png',
     bgColor: '#94C3E7',
     description: 'Transform a learning platform into a digital learning experience',
     timeline: 'Jan 2021 - Apr 2022',
@@ -16,7 +16,7 @@ export const projectsD: ProjectData[] = [
         
         <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16 flex flex-col items-center text-center">
   <img
-    src="/images/projects/emptystate.svg"
+    src="/images/projects/emptystate3D.png"
     alt="empty state illustration"
     className="w-[150px] h-auto mb-4"
   />

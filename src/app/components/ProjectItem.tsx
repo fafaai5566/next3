@@ -36,7 +36,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       )}
     >
       {/* Image */}
-      <div className="w-full h-[150px] sm:h-28 rounded overflow-hidden flex items-center justify-center" style={{ backgroundColor: bgColor }}>
+      <div className="w-full h-[150px] sm:h-28 rounded overflow-hidden flex items-center justify-center" style={{ background: bgColor }}>
       {imageSrc ? (
         <img
           src={imageSrc}

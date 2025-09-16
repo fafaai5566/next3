@@ -4,8 +4,8 @@ export const projectsB: ProjectData[] = [
   {
     id: 'project-1',
     title: 'Digital Architecture Governance',
-    thumbnail: '/images/projects/ats/ats.svg',
-    bgColor: '#D7B1B1',
+    thumbnail: '/images/projects/ats/atsLogo.png',
+    bgColor: '#ECBAB9',
     description: 'Reimagining the Digital Architecture Governance Process',
     timeline: 'Mar 2023 - Dec 2023',
     subtitle: 'London Stock Exchange Group (LSEG)',
@@ -92,7 +92,7 @@ To address this, the team introduced a digital governance service on ServiceNow.
     subtitle: 'London Stock Exchange Group (LSEG)',
     description: 'Designing a seamless and unified employee digital workspace',
     timeline: 'Sep 2022 - Dec 2023',
-    thumbnail: '/images/projects/connect/connect.svg',
+    thumbnail: '/images/projects/connect/connectLogo.png',
     bgColor: '#C7DAD5',
     content: (
       <>
@@ -101,7 +101,7 @@ To address this, the team introduced a digital governance service on ServiceNow.
         
         <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16 flex flex-col items-center text-center">
   <img
-    src="/images/projects/emptystate.svg"
+    src="/images/projects/emptystate3D.png"
     alt="empty state illustration"
     className="w-[150px] h-auto mb-4"
   />

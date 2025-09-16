@@ -4,8 +4,8 @@ export const projectsC: ProjectData[] = [
   {
     id: 'project-1',
     title: 'Bank Albilad Commercial Banking',
-    thumbnail: '/images/projects/albilad/albilad.svg',
-    bgColor: '#E7A894',
+    thumbnail: '/images/projects/albilad/albiladLogo.png',
+    bgColor: '#CFE0EC',
     description: 'Modernizing legacy banking into a seamless digital experience',
     timeline: 'Sep 2024 - Jan 2025',
     subtitle: 'Bank Albilad',
@@ -16,7 +16,7 @@ export const projectsC: ProjectData[] = [
         
         <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16 flex flex-col items-center text-center">
   <img
-    src="/images/projects/emptystate.svg"
+    src="/images/projects/emptystate3D.png"
     alt="empty state illustration"
     className="w-[150px] h-auto mb-4"
   />
@@ -36,8 +36,8 @@ export const projectsC: ProjectData[] = [
     subtitle: 'Mango Kiosk',
     description: 'Designing a Digital Wallet Tailored for the UAE Market',
     timeline: 'Jun 2022 - Aug 2022',
-    thumbnail: '/images/projects/mango/mango.svg',
-    bgColor: '#E4AC4D',
+    thumbnail: '/images/projects/mango/mangoLogo.png',
+    bgColor: '#F5CA83',
     content: (
       <>
         <p className="text-subtitle-1 mb-6 text-neutralFg">Designing a Digital Wallet Tailored for the UAE Market
@@ -45,7 +45,7 @@ export const projectsC: ProjectData[] = [
         
         <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16 flex flex-col items-center text-center">
   <img
-    src="/images/projects/emptystate.svg"
+    src="/images/projects/emptystate3D.png"
     alt="empty state illustration"
     className="w-[150px] h-auto mb-4"
   />

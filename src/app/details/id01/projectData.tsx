@@ -4,8 +4,9 @@ export const projectsA: ProjectData[] = [
   {
     id: 'project-1',
     title: 'Entity Master',
-    thumbnail: '/images/projects/entitymaster/entitymaster.svg',
-    bgColor: '#99AB82',
+    thumbnail: '/images/projects/entitymaster/entityMaster.png',
+    /* bgColor: '#99AB82', */
+    bgColor: 'linear-gradient(to bottom, #9FA989, #9DA585)',
     description: 'Transforming entity management into a more efficient and user-friendly data experience',
     timeline: 'Dec 2023 - Jul 2024',
     subtitle: 'London Stock Exchange Group (LSEG)',
@@ -112,8 +113,8 @@ export const projectsA: ProjectData[] = [
     subtitle: 'London Stock Exchange Group (LSEG)',
     description: 'Building a Transcript Platform that Drives Efficiency and Collaboration',
     timeline: 'Sep 2022 - Dec 2023',
-    thumbnail: '/images/projects/hive/hive.svg',
-    bgColor: '#A6C2B8',
+    thumbnail: '/images/projects/hive/hiveLogo.png',
+    bgColor: '#C7DBD5',
     content: (
       <>
         <p className="text-subtitle-1 mb-6 text-neutralFg">Building a Transcript Platform that Drives Efficiency and Collaboration</p>
@@ -174,7 +175,7 @@ This shift not only improved the product but also embedded <strong>UX thinking i
     subtitle: 'CitNOW Group',
     description: 'Transforming a legacy workshop management platform',
     timeline: 'Mar 2025 - Jun 2025',
-    thumbnail: '/images/projects/rtc/rtc.svg',
+    thumbnail: '/images/projects/rtc/rtcLogo.png',
     bgColor: '#D97757',
     content: (
       <>
