@@ -53,7 +53,7 @@ return (
     {/* Desktop: roomy divider between row groups */}
     <Divider
       padding="none"
-      className="hidden md:block my-6 !border-[#AFAFAF]"
+      className="hidden md:block my-6 border-[#AFAFAF]"
     />
   </>
 )}
