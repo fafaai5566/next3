@@ -53,15 +53,18 @@ return (
     {/* Desktop: roomy divider between row groups */}
     <Divider
       padding="none"
-      className="hidden md:block my-6 border-[#AFAFAF]"
+      className="metric-desktop-divider hidden md:block my-6 border-[#AFAFAF]"
     />
   </>
 )}
         {/* each row = exactly 2 columns on md+ */}
 
-    <div className="grid grid-cols-1 md:grid-cols-2 w-full
-                    divide-y divide-[#CFCFCF]
-                    md:divide-y-0 md:divide-x">
+{/* 👇 add a stable hook class on the grid */}
+      <div
+        className="metric-grid grid grid-cols-1 md:grid-cols-2 w-full
+                   divide-y divide-[#CFCFCF]
+                   md:divide-y-0 md:divide-x"
+      >
                         
           {row.map((item, i) => (
             <div key={`${rowIndex}-${i}`} className={clsx('flex items-start p-4 w-full h-full', cellPadding)}>
