@@ -3,6 +3,7 @@ import { MetricCluster } from '../../components/metrics';
 import MetricClusterSingle from '@/app/components/metrics/MetricClusterSingle';
 import ArticleSplit from '@/app/components/ArticleSplit';
 import ArticleCluster from '@/app/components/ArticleCluster';
+import Divider from '@/app/components/divider';
 
 export const projectsB: ProjectData[] = [
   {
@@ -154,8 +155,9 @@ To address this, the team introduced a digital governance service on ServiceNow.
       <>
         <p className="text-subtitle-1 mb-6 text-neutralFg">Designing a seamless and unified employee digital workspace
         </p>
+        <Divider className="my-8 border-neutralBorder-level2" />
         
-        <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16 flex flex-col items-center text-center">
+{/*         <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16 flex flex-col items-center text-center">
   <img
     src="/images/projects/emptystate3D.png"
     alt="empty state illustration"
@@ -164,7 +166,38 @@ To address this, the team introduced a digital governance service on ServiceNow.
   <p className="text-body-3 text-neutralFg">
     This story isn’t ready yet, but it’s on the way
   </p>
-</div>
+</div> */}
+
+   <p>
+    The employee digital workspace offers many services but relies on disparate content management platforms. Employees find it difficult to locate the information they need, perform self service and get help. The journey of applying for a service is disconnected and the overall experience is inconsistent.
+        </p>
+        <p>In this project, I focused on redesigning the Support Hub (also known as the ServiceNow Employee Center portal) to provide a consistent and optimized user experience across different employee digital workspaces.</p>
+
+            <h3>My key contributions include:</h3>
+    
+          <ArticleCluster className="mt-8 mb-8">
+                <ArticleSplit title="Aligned information architecture">
+                      <p>
+               Updated the ServiceNow IA to reflect better categorization of 'Service Knowledge' to support the migration of content to a single knowledge base and the refresh of service knowledge and policy related documents
+                  </p>
+                </ArticleSplit>
+                      <ArticleSplit title="Combined search experience">
+                       <p>
+                Included knowledge articles from ServiceNow in the search results on Connect. 
+                  </p>
+                </ArticleSplit>
+                                      <ArticleSplit title="Enhanced user experience">
+                       <p>
+                Updated UX for ServiceNow to provide a better experience for users navigating through the platform for service-related journeys. ( Homepage, Article Template, Request From Templates and Service Category Page ). 
+                  </p>
+                </ArticleSplit>
+                                      <ArticleSplit title="Back to out-of-the-box">
+                       <p>
+                Redesigned the pages from a heavily customized instance to an out-of-the-box instance. 
+                  </p>
+                </ArticleSplit>
+      
+                </ArticleCluster>
 
         
         
