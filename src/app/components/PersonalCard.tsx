@@ -152,9 +152,14 @@ const hoverContentMap: Record<string, React.ReactNode> = {
             className="object-cover w-full h-full"
           />
         </div>
-        <p className="text-title-3 font-medium text-neutralFg-selected">
-          Hi I am Shun-Fa, I am a <br /> product designer
-        </p>
+         <div className="flex flex-col">
+    <p className="text-title-3 font-medium text-neutralFg-selected">
+      Hi, I am Shun-Fa
+    </p>
+    <p className="text-body-2 text-neutralFg mt-2">
+      I help enterprises with digital transformation.
+    </p>
+  </div>
       </div>
 
       <hr className="border-neutralStroke mt-6 mb-6" />
