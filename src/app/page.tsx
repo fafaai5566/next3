@@ -50,6 +50,20 @@ export default function Home() {
       {!isTransitioning && (
         <main className="flex flex-col space-y-4 sm:space-y-6 row-start-3 items-center sm:items-start w-full max-w-xl">
           <Card
+            title="AI Exploration"
+            description="Demonstrate AI-driven approaches to simplifying complex workflows."
+            imageSrc="/images/aiExploration.png"
+            videoSrc="/videos/aiExploration_360p.mp4"
+            videoScale={1.2}
+            videoOffsetY={0}
+            targetPath="/details/id05"
+            onClick={() =>
+              handleCardClick('/videos/aiExploration_360p.mp4', '/details/id05')
+            }
+          />
+
+
+          <Card
             title="Enterprise Platform"
             description="Designing enterprise tools that simplify complex workflow, foster collaboration, and modernize outdated systems."
             imageSrc="/images/enterprise-management.png"
@@ -103,6 +117,7 @@ export default function Home() {
               handleCardClick('/videos/e-learning_360p.mp4', '/details/id04')
             }
           />
+          
 
 
         </main>
