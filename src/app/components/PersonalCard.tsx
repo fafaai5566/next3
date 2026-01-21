@@ -96,7 +96,8 @@ const hoverContentMap: Record<string, React.ReactNode> = {
 };
 
 
-  const tagsDo = ['UX/UI', 'User centred design', 'User research', 'Visual design', 'Design systems', 'Wireframing & prototyping', 'Vibe coding', 'Figma',  'Industrial design', 'C4D', 'Pro Engineer'];
+  const tagsPlan = [ 'User centred design', 'User research', 'Design workshops', 'Usability testing', 'Stakeholder management', 'AI-Driven design'];
+  const tagsBuild = ['Design systems', 'Wireframing', 'Prototyping', 'Figma', 'React', 'VS code', 'Codex'];
   const tagsLike = ['Hiking', 'Biking', 'Drawing', 'Coffee'];
 
   const experience = [
@@ -164,11 +165,21 @@ const hoverContentMap: Record<string, React.ReactNode> = {
 
       <hr className="border-neutralStroke mt-6 mb-6" />
 
-      {/* I do */}
+      {/* Plan thoroughly */}
       <div>
-        <p className="text-body-2-strong text-neutralFg mb-2">My skills</p>
+        <p className="text-body-2-strong text-neutralFg mb-2">Plan thoroughly</p>
         <div className="flex flex-wrap gap-x-2 gap-y-3">
-          {tagsDo.map((tag) => (
+          {tagsPlan.map((tag) => (
+            <InteractionTag key={tag} label={tag} variant="outline" hoverContent={hoverContentMapDo[tag]} />
+          ))}
+        </div>
+      </div>
+
+      {/* Build fast */}
+      <div>
+        <p className="text-body-2-strong text-neutralFg mt-4 mb-2">Build fast</p>
+        <div className="flex flex-wrap gap-x-2 gap-y-3">
+          {tagsBuild.map((tag) => (
             <InteractionTag key={tag} label={tag} variant="outline" hoverContent={hoverContentMapDo[tag]} />
           ))}
         </div>
