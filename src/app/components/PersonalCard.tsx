@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 import InteractionTag from './InteractionTag';
 import ListType1 from './list-type1';
 import Button from './button';
@@ -12,11 +12,39 @@ import HikingIcon from '@mui/icons-material/Hiking';
 import DirectionsBikeIcon from '@mui/icons-material/DirectionsBike';
 import BrushIcon from '@mui/icons-material/Brush';
 import CoffeeIcon from '@mui/icons-material/Coffee';
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import CloseIcon from "@mui/icons-material/Close";
+
+
+//Video 
+const VIDEO_SRC = "/videos/mySkill-360p.mp4";
 
 
 const PersonalCard = () => {
 
   const [copied, setCopied] = useState(false);
+
+//Video
+
+const [showVideo, setShowVideo] = useState(true);
+const [playNonce, setPlayNonce] = useState(0); // forces video remount for replay
+
+const videoRef = useRef<HTMLVideoElement | null>(null);
+
+
+
+const closeVideo = () => {
+  videoRef.current?.pause();
+  setShowVideo(false);
+};
+
+const replayVideo = () => {
+  setPlayNonce((n) => n + 1);
+  setShowVideo(true);
+};
+
+//Vidoe end
+
 
 const handleCopy = () => {
   navigator.clipboard.writeText('soonfa86@gmail.com');
@@ -163,39 +191,107 @@ const hoverContentMap: Record<string, React.ReactNode> = {
     </div>
       </div>
 
-      <hr className="border-neutralStroke mt-6 mb-6" />
+     <hr className="border-neutralStroke mt-6 mb-6" />
 
-      {/* Plan thoroughly */}
-      <div>
+{showVideo ? (
+  <div className="relative">
+    <div className="rounded-xl overflow-hidden border border-neutralStroke">
+      <video
+        key={playNonce}
+        ref={videoRef}
+        src="/videos/mySkill-360p.mp4"
+        className="w-full h-auto block"
+        autoPlay
+        muted
+        playsInline
+        controls={false}
+        preload="auto"
+        onEnded={() => setShowVideo(false)}
+      />
+    </div>
+
+    {/* Close button */}
+    <Button
+  type="button"
+  variant="subtle"
+  size="sm"
+  iconOnly
+  onClick={closeVideo}
+  icon={<CloseIcon fontSize="small" />}
+  aria-label="Close video"
+  className="absolute top-3 right-3 bg-white/90 backdrop-blur"
+ />
+
+  </div>
+) : (
+  <>
+    {/* Plan thoroughly */}
+    <div>
+      <div className="flex items-center justify-between mb-2">
         <p className="text-body-2-strong text-neutralFg mb-2">Plan thoroughly</p>
-        <div className="flex flex-wrap gap-x-2 gap-y-3">
-          {tagsPlan.map((tag) => (
-            <InteractionTag key={tag} label={tag} variant="outline" hoverContent={hoverContentMapDo[tag]} />
-          ))}
-        </div>
+
+        {/* Play again button */}
+        <Button
+  type="button"
+  variant="subtle"
+  size="sm"
+  onClick={replayVideo}
+  icon={<PlayArrowIcon fontSize="small" />}
+>
+  Play again
+</Button>
+
       </div>
 
-      {/* Build fast */}
-      <div>
-        <p className="text-body-2-strong text-neutralFg mt-4 mb-2">Build fast</p>
-        <div className="flex flex-wrap gap-x-2 gap-y-3">
-          {tagsBuild.map((tag) => (
-            <InteractionTag key={tag} label={tag} variant="outline" hoverContent={hoverContentMapDo[tag]} />
-          ))}
-        </div>
+      <div className="flex flex-wrap gap-x-2 gap-y-3">
+        {tagsPlan.map((tag) => (
+          <InteractionTag
+            key={tag}
+            label={tag}
+            variant="outline"
+            hoverContent={hoverContentMapDo[tag]}
+          />
+        ))}
       </div>
+    </div>
 
-      {/* I like */}
-      <div>
-        <p className="text-body-2-strong text-neutralFg mt-4 mb-2">My favorite ways to recharge</p>
-        <div className="flex flex-wrap gap-x-2 gap-y-3">
-          {tagsLike.map((tag) => (
-            <InteractionTag key={tag} label={tag} variant="outline" icon={iconMap[tag]} hoverContent={hoverContentMap[tag]} />
-          ))}
-        </div>
+    {/* Build fast */}
+    <div>
+      <p className="text-body-2-strong text-neutralFg mt-4 mb-2">Build fast</p>
+      <div className="flex flex-wrap gap-x-2 gap-y-3">
+        {tagsBuild.map((tag) => (
+          <InteractionTag
+            key={tag}
+            label={tag}
+            variant="outline"
+            hoverContent={hoverContentMapDo[tag]}
+          />
+        ))}
       </div>
+    </div>
 
-      <hr className="border-neutralStroke mt-6 mb-0" />
+    {/* I like */}
+    <div>
+      <p className="text-body-2-strong text-neutralFg mt-4 mb-2">
+        My favorite ways to recharge
+      </p>
+      <div className="flex flex-wrap gap-x-2 gap-y-3">
+        {tagsLike.map((tag) => (
+          <InteractionTag
+            key={tag}
+            label={tag}
+            variant="outline"
+            icon={iconMap[tag]}
+            hoverContent={hoverContentMap[tag]}
+          />
+        ))}
+      </div>
+    </div>
+  </>
+)}
+
+<hr className="border-neutralStroke mt-6 mb-0" />
+
 
       {/* Experience */}
       <ListType1 items={experience} />
@@ -232,6 +328,7 @@ const hoverContentMap: Record<string, React.ReactNode> = {
 
     </div>
   );
+  
 };
 
 export default PersonalCard;
