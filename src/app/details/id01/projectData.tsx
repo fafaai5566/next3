@@ -4,6 +4,88 @@ import ArticleSplit from '@/app/components/ArticleSplit';
 import ArticleCluster from '@/app/components/ArticleCluster';
 
 export const projectsA: ProjectData[] = [
+    {
+    id: 'project-2',
+    title: 'HIVE',
+    subtitle: 'London Stock Exchange Group (LSEG)',
+    description: 'An AI-assisted Transcript Platform that Drives Efficiency and Collaboration',
+    timeline: 'Sep 2022 - Dec 2023',
+    thumbnail: '/images/projects/hive/hiveLogo.png',
+    bgColor: '#C7DBD5',
+    content: (
+      <>
+        <p className="text-subtitle-1 mb-6 text-neutralFg">An AI-assisted Transcript Platform that Drives Efficiency and Collaboration</p>
+        
+        <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16">
+  <img
+    src="/images/projects/hive/Hive.png"
+    alt="Hive application"
+    className="w-full shadow-lg rounded-md"
+  />
+</div>
+        <p>
+      LSEG produces around 40,000 financial event transcripts each year. To support this scale, we built Hive, an internal transcripts platform designed to replace a costly external solution. Beyond reducing expenses, Hive uses an AI-assisted workflow to deliver a streamlined and collaborative user experience. It supports manual transcript processing, enhances speech-to-text outputs, and enables managers and analysts to work together within the same platform—improving both efficiency and accuracy across the workflow.
+        </p>
+       <h2>Key results</h2>
+       <p>
+        <MetricCluster
+  items={[
+    
+    { title: "AI assisted, human-in-the-loop workflow", description: "The system is assisting the human from producing draft to assigning tasks, human remains in the loop to review, correct, and finalize the text and assignments." },
+    { title: " Increased transcript coverage by 38%", description: "The AI-assisted workflow helps analysts and managers work more efficiently and be more productive." },
+    { title: " Integrated UX principles", description: "Fostered a team culture where members acknowledged the value of user-centered design and embraced it as a core part of their workflow." },
+
+  ]}
+/>
+</p>
+        
+        <h2>Crafting AI-assisted Workflow</h2>
+        <h3>Define the problem</h3>
+        <p>
+      The first step is to define the problem. The tolerated error rate in transcripts must be extremely low because accuracy is essential for analysts to conduct their analyses correctly. In this case, it is a sharp-edged problem. For example, if there is an error in a revenue figure, the consequences can be significant. Since we cannot fully rely on AI to deliver 100% accuracy, we reframed the task as a <strong>rough-edged</strong> problem. AI does the heavy lifting by generating an initial draft, after which analysts review, correct, finalize, and publish the transcript for client use.
+        </p>
+
+        <h3>Design the user experience for human-AI interaction</h3>
+        <p>In this step, I defined the seam between humans and AI—the transition between automated work and human control.
+
+Previously, managers and analysts relied on spreadsheets to manage their work manually on an external platform. This was time-consuming and fragmented. Even though the draft work was done by AI, transferring that work to analysts was still problematic. Therefore, I designed a workforce management platform to <strong>streamline task assignment</strong>. The system automatically assigned tasks to analysts based on their market, skills, availability, and workload, while managers monitored the process and made changes when needed.</p>
+
+<h3>Advocate for a User-Centered Approach</h3>
+<p>Before jumping into design features, I made sure to have the full picture of user needs—including the frustrations and hidden challenges that weren’t captured in the initial requirements.</p>
+ <p>
+      Although requirements were provided upfront, they were feature-driven and lacked real user context. When I proposed interviewing end users, the development team initially pushed back: <em>“We know the product well, just ask us”</em>.
+
+I recognized this as an opportunity to introduce a <strong>user-centered design mindset</strong>. I conducted interviews with different types of users, analyzed their workflows, and translated findings into actionable insights. Sharing these with both the team and stakeholders revealed critical gaps and helped align our design direction with both business goals and user needs.
+
+By actively involving stakeholders throughout the design process, I built trust and support—helping the project move forward smoothly.
+        </p>
+
+                <div>
+          <img
+    src="/images/projects/hive/serviceBluePrint.png"
+    alt="Service blueprint"
+    className="w-full rounded-md"
+  />
+</div>
+
+
+
+        
+        <h2>Reflections</h2>
+        <p>A well-defined AI-assisted tool enhanced human productivity rather than replacing human workers.</p>
+        <p>
+      At the same time, introducing a user-centered way of working had a lasting impact. The product manager began proactively joining me in user interviews before features were defined. Together, we used these insights to influence stakeholders—shifting the conversation from <em>“what features to implement”</em>{' '} to <em>“what outcomes to achieve”</em>.
+
+This shift not only improved the product but also embedded <strong>UX thinking into the team’s culture</strong>.
+        </p>
+        
+        
+      </>
+      ),
+  },
+
+
+
   {
     id: 'project-1',
     title: 'Entity Master',
@@ -131,7 +213,7 @@ export const projectsA: ProjectData[] = [
 
 
         
-        <h2>Results</h2>
+        <h2>Reflections</h2>
         <p>
       The most rewarding part of this project was helping to raise the <strong>UX maturity</strong> of the team. At first, change felt almost impossible—but gradually, mindsets shifted. I remember my design lead being impressed when a key stakeholder from the content team asked <em>“Could you provide us with your solution for the upcoming features?”</em>  That moment confirmed that the value of a user-centered approach was being recognized. It showed that stakeholders <strong>trusted the role of UX design</strong> in shaping user needs into meaningful, well-crafted experiences.
         </p>
@@ -139,91 +221,7 @@ export const projectsA: ProjectData[] = [
       </>
     ),
   },
-  {
-    id: 'project-2',
-    title: 'HIVE',
-    subtitle: 'London Stock Exchange Group (LSEG)',
-    description: 'Building a Transcript Platform that Drives Efficiency and Collaboration',
-    timeline: 'Sep 2022 - Dec 2023',
-    thumbnail: '/images/projects/hive/hiveLogo.png',
-    bgColor: '#C7DBD5',
-    content: (
-      <>
-        <p className="text-subtitle-1 mb-6 text-neutralFg">Building a Transcript Platform that Drives Efficiency and Collaboration</p>
-        
-        <div className="bg-neutralBg-level3 px-12 py-12 rounded-md mt-12 mb-16">
-  <img
-    src="/images/projects/hive/Hive.png"
-    alt="Hive application"
-    className="w-full shadow-lg rounded-md"
-  />
-</div>
-        <p>
-      LSEG produces around 40,000 financial event transcripts each year. To support this scale, we built Hive, an internal transcripts platform designed to replace a costly external solution. Beyond reducing expenses, Hive delivers a more streamlined and collaborative user experience. It supports manual transcript processing, enhances speech-to-text outputs, and enables managers and analysts to work together within the same platform—improving both efficiency and accuracy across the workflow.
-        </p>
-       <h2>Key results</h2>
-       <p>
-        <MetricCluster
-  items={[
-    { title: " Increased transcript coverage by 38%", description: "Unified the platform for analysts and managers, improving efficiency with a new automation workflow." },
-    { title: "Enhanced user experience", description: "Created features that directly addressed user needs, enabling them to complete their work more efficiently and on time" },
-    { title: " Integrated UX principles", description: "Fostered a team culture where members acknowledged the value of user-centered design and embraced it as a core part of their workflow." },
 
-  ]}
-/>
-</p>
-        
-        <h2>Creating a Better Experience</h2>
-        
-        <p>
-      Previously, managers and analysts had to rely on spreadsheets to manage their work alongside an external platform. This was time-consuming and fragmented. I saw the opportunity to design a <strong>single, unified platform</strong> that not only improved efficiency but also addressed real user pain points.
-
-Before jumping into features, I wanted to make sure we had the <strong>full picture of user needs</strong>—including the frustrations and hidden challenges that weren’t captured in the initial requirements.
-        </p>
-
-        <h3>What I did</h3>
-
-        <ArticleCluster className="mt-8 mb-8">
-      <ArticleSplit title="Advocating for a User-Centered Approach">
-          <p>
-      Although requirements were provided upfront, they were feature-driven and lacked real user context. When I proposed interviewing end users, the development team initially pushed back: <em>“We know the product well, just ask us”</em>.
-
-I recognized this as an opportunity to introduce a <strong>user-centered design mindset</strong>. I conducted interviews with different types of users, analyzed their workflows, and translated findings into actionable insights. Sharing these with both the team and stakeholders revealed critical gaps and helped align our design direction with both business goals and user needs.
-
-By actively involving stakeholders throughout the design process, I built trust and support—helping the project move forward smoothly.
-        </p>
-      </ArticleSplit>
-      </ArticleCluster>
-
-                <div>
-          <img
-    src="/images/projects/hive/serviceBluePrint.png"
-    alt="Service blueprint"
-    className="w-full rounded-md"
-  />
-</div>
-
-        <ArticleCluster className="mt-8 mb-8">
-      <ArticleSplit title="Leveraging Design Critique">
-                 <p>
-      I also engaged with other design teams working on related digital content projects. Through design critiques, we exchanged feedback, identified blind spots, and ensured consistent design patterns across LSEG’s ecosystem—resulting in a more cohesive user experience.
-        </p>
-      </ArticleSplit>
-      </ArticleCluster>
-
-
-        
-        <h2>Results</h2>
-        <p>
-      Introducing a user-centered way of working had a lasting impact. The product manager began proactively joining me in user interviews before features were defined. Together, we used these insights to influence stakeholders—shifting the conversation from <em>“what features to implement”</em>{' '} to <em>“what outcomes to achieve”</em>.
-
-This shift not only improved the product but also embedded <strong>UX thinking into the team’s culture</strong>.
-        </p>
-        
-        
-      </>
-      ),
-  },
   {
     id: 'project-3',
     title: 'RTC Workshop Management',
