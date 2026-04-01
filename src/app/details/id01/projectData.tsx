@@ -46,6 +46,13 @@ export const projectsA: ProjectData[] = [
         </p>
 
         <h3>Design the user experience for human-AI interaction</h3>
+        <div className="px-10 py-10">
+          <img
+    src="/images/projects/hive/human_ai_interaction.png"
+    alt="Human-AI interaction"
+    className="w-full rounded-md"
+  />
+</div>
         <p>In this step, I defined the seam between humans and AI—the transition between automated work and human control.
 
 Previously, managers and analysts relied on spreadsheets to manage their work manually on an external platform. This was time-consuming and fragmented. Even though the draft work was done by AI, transferring that work to analysts was still problematic. Therefore, I designed a workforce management platform to <strong>streamline task assignment</strong>. The system automatically assigned tasks to analysts based on their market, skills, availability, and workload, while managers monitored the process and made changes when needed.</p>
