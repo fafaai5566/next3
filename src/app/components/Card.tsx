@@ -81,7 +81,7 @@ const Card: FC<CardProps> = ({
   return (
     <div
       onClick={handleClick}
-      className="bg-white dark:bg-gray-800 rounded-xl border border-neutralStroke p-4 sm:p-4 flex w-full max-w-xl gap-4 items-center cursor-pointer transition-shadow hover:shadow-xl"
+      className="bg-white rounded-xl border border-neutralStroke p-4 sm:p-4 flex w-full max-w-xl gap-4 items-center cursor-pointer transition-shadow hover:shadow-xl"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -113,10 +113,10 @@ const Card: FC<CardProps> = ({
       </div>
 
       <div>
-        <h3 className="text-body-2-strong sm:text-subtitle-1 text-gray-900 dark:text-white mb-1">
+        <h3 className="text-body-2-strong sm:text-subtitle-1 text-gray-900 mb-1">
           {title}
         </h3>
-        <p className="hidden sm:block text-body-2 text-gray-600 dark:text-gray-300">
+        <p className="hidden sm:block text-body-2 text-gray-600">
           {description}
         </p>
       </div>
